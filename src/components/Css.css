@@ -1,0 +1,343 @@
+/* Header Redesign – Rynott College */
+
+/* Main nav style */
+.rynott-navbar {
+  background: #ffffff;
+  padding: 12px 0;
+  transition: 0.35s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Sticky effect on scroll */
+.rynott-navbar.sticky {
+  background: #ffffffee;
+}
+
+/* Logo icon */
+.college-logo-icon {
+  font-size: 32px;
+  color: #084298; /* university blue */
+}
+
+/* Title */
+.college-title {
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #062a61;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link,
+.navbar-nav .dropdown-toggle {
+  font-weight: 500;
+  color: #062a61 !important;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: 0.25s ease;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover,
+.navbar-nav .dropdown-toggle:hover {
+  color: #0d6efd !important;
+}
+
+/* Dropdown style */
+.dropdown-menu {
+  border-radius: 10px;
+  border: none;
+  padding: 10px 0;
+  animation: dropdownFade 0.22s ease-in-out;
+}
+
+@keyframes dropdownFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.dropdown-item {
+  font-size: 15px;
+  padding: 10px 20px;
+}
+.dropdown-item:hover {
+  background: #f0f6ff;
+  color: #0d6efd;
+}
+
+/* "Apply Now" button */
+.btn-success {
+  border-radius: 50px;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .navbar-nav .dropdown-menu {
+    box-shadow: none;
+  }
+  .college-title {
+    font-size: 20px;
+  }
+}
+
+:root {
+  --primary-blue: #0f2c55;
+  --gold: #e9c76a;
+}
+
+/* HERO SECTION */
+.apply-hero {
+  background: url('/images/rynott_campus9.jpg') center/cover no-repeat;
+  height: 340px;
+}
+
+/* FORM BOX */
+.form-box {
+  border-radius: 20px;
+  background: blur(10px);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.submit-btn {
+  background-color: var(--gold);
+  color: #000;
+  border: none;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #f1d88a;
+  transform: translateY(-3px);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Page bg */
+.apply-form-page {
+  background: url('/images/collagebg.png') repeat;
+}
+
+
+
+:root {
+  --primary-blue: #0f2c55;
+  --gold: #e9c76a;
+}
+
+/* HERO */
+.history-hero {
+  background: url("/images/rynott_campus7.jpg") center/cover no-repeat;
+  height: 360px;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  margin-left: 20px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--gold);
+}
+.timeline-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+.timeline-dot {
+  width: 18px;
+  height: 18px;
+  background: var(--gold);
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.timeline-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 22px;
+}
+
+/* FOUNDER BANNER */
+.bg-primary-blue {
+  background: var(--primary-blue);
+}
+.founder-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--gold);
+}
+
+/* GALLERY STRIP */
+.history-gallery {
+  overflow: hidden;
+  background: #fff;
+}
+.gallery-scroll {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  animation: scrollGallery 20s linear infinite;
+}
+.gallery-scroll img {
+  width: 290px;
+  height: 170px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+@keyframes scrollGallery {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+:root {
+  --primary-blue: #0f2c55;
+  --gold: #e9c76a;
+}
+
+/* HERO */
+.facility-hero {
+  background: url("/images/rynott_campus7.jpg") center/cover no-repeat;
+  height: 360px;
+}
+
+/* CARDS */
+.facility-card {
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.35s ease-in-out;
+}
+
+.facility-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+.facility-img-wrapper {
+  height: 200px;
+  overflow: hidden;
+}
+
+.facility-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.facility-card:hover .facility-img {
+  transform: scale(1.1);
+}
+
+.facility-icon {
+  font-size: 38px;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+
+.faculty-section {
+  background: #f8fafc;
+}
+
+.faculty-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.highlight-text {
+  color: #0d6efd;
+}
+
+.faculty-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  max-width: 650px;
+  margin: auto;
+}
+
+.faculty-card {
+  border-radius: 15px;
+  transition: 0.3s;
+  background: #ffffff;
+}
+
+.faculty-card:hover {
+  transform: translateY(-10px);
+  background: #e9f2ff;
+}
+
+.faculty-icon {
+  font-size: 3rem;
+  color: #0d6efd;
+}
+
+
+.mission-section {
+  background: #f7faff;
+}
+
+.mission-title {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.highlight-text {
+  color: #0d6efd;
+}
+
+.mission-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.mission-img {
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.mission-img:hover {
+  transform: scale(1.04);
+}
+
+.mission-points p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.mission-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .mission-title {
+    text-align: center;
+  }
+  .mission-subtitle {
+    text-align: center;
+  }
+  .mission-points {
+    text-align: center;
+  }
+  .mission-points p {
+    justify-content: center;
+  }
+}

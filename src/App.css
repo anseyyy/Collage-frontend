@@ -1,0 +1,171 @@
+/* ---------------- GLOBAL ---------------- */
+body {
+  scroll-behavior: smooth;
+}
+
+/* Smooth hover for all buttons */
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Fade + Slide Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.6s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 1.4s ease-in-out;
+}
+
+
+/* ---------------- HERO SECTION ---------------- */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.42);
+}
+
+.hero-section * {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ---------------- CARDS ---------------- */
+.card {
+  border: none;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.18) !important;
+}
+
+.card h4 {
+  font-weight: 700;
+}
+
+
+/* ---------------- GALLERY ---------------- */
+.img-fluid {
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.img-fluid:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ---------------- CAMPUS EXPERIENCE ICONS ---------------- */
+.campus-icon {
+  transition: 0.3s;
+}
+
+.campus-icon:hover {
+  transform: scale(1.18);
+}
+
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  border-top: 3px solid #198754;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+
+/* ---------------- SCROLL ANIMATIONS (auto trigger) ---------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-box {
+  /* background: url('/images/rynott_campus1.jpg') center/cover no-repeat; */
+  height: 250px;
+  width: 400px;
+  transition: 0.3s;
+}
+.gallery-box:hover {
+  transform: scale(1.05);
+}
+
+/* Scroll Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* 🟦 Rynott Theme Colors */
+:root {
+  --primary-blue: #0f2c55;
+  --gold: #e9c76a;
+}
+
+/* HERO */
+.programs-hero {
+  background: url("/images/rynott_campus1.jpg") center/cover no-repeat;
+  height: 380px;
+}
+
+/* CARD */
+.premium-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.premium-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 30px rgba(0,0,0,0.2);
+}
+
+.premium-img-wrapper img {
+  height: 260px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.programs-page {
+  background: #ffffff;
+}
